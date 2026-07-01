@@ -4,6 +4,8 @@ brain-games:
 	node bin/brain-games.js ## позволит запускать игру без глобальной установки
 brain-even:
 	node bin/brain-even.js
+brain-calc:
+	node bin/brain-calc.js
 publish:
 	npm publish --dry-run ## командует не добавлять пакет в основной каталог NPM
 link:

@@ -1,36 +1,19 @@
 #!/usr/bin/env node
-
-import readlineSync from 'readline-sync'
+import viewDefault from '../src/index.js'
 import crypto from 'crypto'
 
-console.log('Welcome to the Brain Games!')
-let name = readlineSync.question('May I have your name? ')
-console.log(`Hello, ${name}!`)
-console.log('Answer "yes" if the number is even, otherwise answer "no".')
-
+let number = crypto.randomInt(1, 101)
+let example = []
+let correctAnswer = []
 for (let i = 0; i < 3; i++) {
-  let number = crypto.randomInt(1, 101)
-  console.log(`Question: ${number}`)
-  let answer = readlineSync.question('Your answer: ')
-
-  if (number % 2 === 0) {
-    let correct = 'yes'
-    if (answer === correct) {
-      console.log('Correct!')
-    }
-    else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\n` + `Let's try again, ${name}!`)
-      break
-    }
+  number = crypto.randomInt(1, 101)
+  example.push(number)
+  if (Number(example[i] % 2 === 0)) {
+    correctAnswer.push('yes')
   }
   else {
-    let correct = 'no'
-    if (answer === correct) {
-      console.log('Correct!')
-    }
-    else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.\n` + `Let's try again, ${name}!`)
-      break
-    }
+    correctAnswer.push('no')
   }
 }
+console.log(example)
+viewDefault('Answer "yes" if the number is even, otherwise answer "no".', example, correctAnswer)
