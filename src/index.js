@@ -13,11 +13,13 @@ export default (gameTitle, example, correctAnswer) => {
 
     if (answer.toString() === correctAnswer[i]) {
       console.log('Correct!')
+      if (i === 2) {
+        console.log(`Congratulations, ${name}!`)
+      }
     }
     else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer[i]}'.\n` + `Let's try again, ${name}!`)
       break
     }
   }
-  console.log(`Congratulations, ${name}!`)
 }
