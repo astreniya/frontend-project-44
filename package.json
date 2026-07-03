@@ -17,8 +17,8 @@
     "url": "https://github.com/astreniya/frontend-project-44/issues"
   },
   "homepage": "https://github.com/astreniya/frontend-project-44#readme",
-  "games": {
-    "brain-games": "bin/brain-games.js",
+  "bin": {
+    "brain-games": "games/brain-games.js",
     "brain-even": "games/brain-even.js",
     "brain-calc": "games/brain-calc.js",
     "brain-gcd": "games/brain-gcd.js",
