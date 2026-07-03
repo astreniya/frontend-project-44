@@ -19,4 +19,5 @@ export default (gameTitle, example, correctAnswer) => {
       break
     }
   }
+  console.log(`Congratulations, ${name}!`)
 }
