@@ -1,4 +1,4 @@
-import viewDefault from '../src/index.js'
+#!/usr/bin/env node
 import crypto from 'crypto'
 
 let example = []
