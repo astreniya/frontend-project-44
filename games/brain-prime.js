@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import crypto from 'crypto'
+import viewDefault from '../src/index.js'
 
 let example = []
 let correctAnswer = []
