@@ -15,5 +15,5 @@ for (let i = 0; i < 3; i++) {
     correctAnswer.push('no')
   }
 }
-console.log(example)
+
 viewDefault('Answer "yes" if the number is even, otherwise answer "no".', example, correctAnswer)

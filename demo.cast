@@ -8,7 +8,7 @@
 [0.95757, "o", "\u001b[35Dmake brain-prime                   \u001b[19D"]
 [1.701214, "o", "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"]
 [1.703284, "o", "\u001b]2;make brain-prime\u0007\u001b]1;make\u0007"]
-[1.706701, "o", "node bin/brain-prime.js\r\n"]
+[1.706701, "o", "node games/brain-prime.js\r\n"]
 [1.747741, "o", "Welcome to the Brain Games!\r\n"]
 [1.749381, "o", "May I have your name? "]
 [3.188167, "o", "O"]
