@@ -6,7 +6,7 @@ export default (gameTitle, example, correctAnswer) => {
   console.log(`Hello, ${name}!`)
   console.log(gameTitle)
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i <= 2; i++) {
     console.log(`Question: ${example[i]}`)
 
     const answer = readlineSync.question('Your answer: ')
